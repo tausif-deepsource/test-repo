@@ -37,6 +37,10 @@ class Dummy:
         return self.listy
 
     def hello(self, a, b):
+        if a + b:
+            print("boo")
+            raise Exception
+
         return a + b
 
 
